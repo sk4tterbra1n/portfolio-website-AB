@@ -85,7 +85,8 @@ a.button:focus {
   text-decoration: none;
 }
 
-.button.contact {
+.button.contact,
+.button.contact:focus {
   background-color: transparent;
   color: #2F3C7E;
   text-transform: uppercase;
@@ -93,7 +94,8 @@ a.button:focus {
   padding: 10px 20px;
 }
 
-.button.contact:hover {
+.button.contact:hover,
+.button.contact:active {
   background-color: #2F3C7E;
   color: #ffffff;
 }
