@@ -2,7 +2,13 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>A bit about me - Audrey Balmain</title>
 </head>
 
@@ -22,66 +28,69 @@
     </div>
   </header>
   <main>
-    <div class="about_title">
-      <div class="container">
-        <h1>A Bit About Me</h1>
-      </div> <!-- NOTE: end of container div -->
-    </div> <!-- NOTE: end of about_title div -->
-    <div class="about_details">
-      <div class="container">
-        <picture>
-          <source srcset="img/about/profile_pic@1x.jpg" media="(max-width:767px)">
-          <img src="img/about/profile_pic@2x.jpg" alt="MYMS case study cover">
-        </picture>
-        <div class="about_row">
-          <div class="about_col_a">
-            <h2>My Story</h2>
-            <p>My name is Audrey Balmain and for the last 17 years I have been working in the telecoms industry with my most recent role being Marketing/Digital Media Specialist and Designer.</p>
-            <p>My role sees me doing varying task from maintaining the company Wordpress website and social media platforms, producing all customer facing documents, producing mockups of UI design to help our development team and creating marketing
-              videos/infographics for our products, along with other tasks.</p>
-            <p>Creative work has always been a hobby for me and my spare time used to be spent doing sports/events photography (MMA, paintball and your great aunts silver wedding anniversary) and I quickly became proficient using Photoshop. Recently
-              that extended to digital art, graphic design and website design/development. I can now say I also proficient in Affinity and Adobe packages.</p>
-            <p>My most recent achievement was completing the Career Foundry UI course and I can now say I am officially a UI designer.</p>
-            <p>I like to unwind by going to watch my favourite football team on a Saturday afternoon, going to gigs or spending time with friends. I can also be found streaming on Twitch as I am a massive girl gamer!</p>
-            <a href="files/default_pdf.pdf" download>Download my CV</a>
-          </div> <!-- NOTE: end of about_col_a div -->
-          <div class="about_col_b">
-            <h2>Skills and Tools</h2>
-            <div class="skills_row">
-              <div class="skills_col_a">
-                <h3>Relevant Skills</h3>
-                <ul>
-                  <li>Competitor analysis</li>
-                  <li>User research</li>
-                  <li>User flows</li>
-                  <li>Wireframes</li>
-                  <li>Style guides</li>
-                  <li>Prototyping</li>
-                  <li>Basic HTML, CSS &amp; JavaScript</li>
-                </ul>
-              </div> <!-- NOTE: end of skills_col_a -->
-              <div class="skills_col_b">
-                <h3>Tools I use</h3>
-                <ul>
-                  <li>Adobe XD, Illustrator &amp; Photoshop</li>
-                  <li>Figma</li>
-                  <li>Affinity Designer</li>
-                  <li>InVision</li>
-                  <li>Slack</li>
-                </ul>
-              </div> <!-- NOTE: end of skills_col_b -->
-            </div> <!-- NOTE: end of skills_row div -->
-          </div> <!-- NOTE: end of about_col_b div -->
-        </div> <!-- NOTE: end of about_row div -->
-      </div> <!-- NOTE: end of container div -->
-    </div> <!-- NOTE: end of about_details div -->
+    <div id="aboutme">
+      <div class="about_title">
+        <div class="container">
+          <h1>A Bit About Me</h1>
+        </div> <!-- NOTE: end of container div -->
+      </div> <!-- NOTE: end of about_title div -->
+      <div class="about_details">
+        <div class="container">
+          <picture>
+            <source srcset="img/about/profile_pic@1x.jpg" media="(max-width:767px)">
+            <img src="img/about/profile_pic@2x.jpg" alt="MYMS case study cover">
+          </picture>
+          <div class="about_row">
+            <div class="about_col_a">
+              <h2>My Story</h2>
+              <p>My name is Audrey Balmain and for the last 17 years I have been working in the telecoms industry with my most recent role being Marketing/Digital Media Specialist and Designer.</p>
+              <p>My role sees me doing varying task from maintaining the company Wordpress website and social media platforms, producing all customer facing documents, producing mockups of UI design to help our development team and creating marketing
+                videos/infographics for our products, along with other tasks.</p>
+              <p>Creative work has always been a hobby for me and my spare time used to be spent doing sports/events photography (MMA, paintball and your great aunts silver wedding anniversary) and I quickly became proficient using Photoshop.
+                Recently
+                that extended to digital art, graphic design and website design/development. I can now say I also proficient in Affinity and Adobe packages.</p>
+              <p>My most recent achievement was completing the Career Foundry UI course and I can now say I am officially a UI designer.</p>
+              <p>I like to unwind by going to watch my favourite football team on a Saturday afternoon, going to gigs or spending time with friends. I can also be found streaming on Twitch as I am a massive girl gamer!</p>
+              <a href="files/default_pdf.pdf" class="button" download>Download my CV</a>
+            </div> <!-- NOTE: end of about_col_a div -->
+            <div class="about_col_b">
+              <h2>Skills and Tools</h2>
+              <div class="skills_row">
+                <div class="skills_col_a">
+                  <h3>Relevant Skills</h3>
+                  <ul>
+                    <li>Competitor analysis</li>
+                    <li>User research</li>
+                    <li>User flows</li>
+                    <li>Wireframes</li>
+                    <li>Style guides</li>
+                    <li>Prototyping</li>
+                    <li>Basic HTML, CSS &amp; JavaScript</li>
+                  </ul>
+                </div> <!-- NOTE: end of skills_col_a -->
+                <div class="skills_col_b">
+                  <h3>Tools I use</h3>
+                  <ul>
+                    <li>Adobe XD, Illustrator &amp; Photoshop</li>
+                    <li>Figma</li>
+                    <li>Affinity Designer</li>
+                    <li>InVision</li>
+                    <li>Slack</li>
+                  </ul>
+                </div> <!-- NOTE: end of skills_col_b -->
+              </div> <!-- NOTE: end of skills_row div -->
+            </div> <!-- NOTE: end of about_col_b div -->
+          </div> <!-- NOTE: end of about_row div -->
+        </div> <!-- NOTE: end of container div -->
+      </div> <!-- NOTE: end of about_details div -->
+    </div> <!-- NOTE: end of aboutme ID -->
   </main>
   <footer id="contact">
     <div class="container">
       <h2>Get in Touch</h2>
       <p>If you like my work and would like to discuss opportunities please get in touch. Call:<a href="tel:+447507800328">07507 800328</a>. Prefer to email?</p>
       <div class="emailme">
-        <a href="mailto:abalmain18@gmail.com">Email me</a>
+        <a href="mailto:abalmain18@gmail.com" class="button contact">Email me</a>
       </div> <!-- NOTE: end of emailme div -->
       <div class="socials">
         <a href="https://www.linkedin.com/in/audrey-b-b32870187/" target="_blank"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
