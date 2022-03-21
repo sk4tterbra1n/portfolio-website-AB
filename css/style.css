@@ -153,10 +153,12 @@ footer h2 {
   text-align: center;
 }
 
-svg {
+#contact svg {
   max-width: 35px;
   margin: 0 15px;
 }
+
+
 
 
 /* NOTE: Main Page CSS */
@@ -198,10 +200,22 @@ svg {
   margin: 0;
 }
 
+#aboutme img {
+  max-width: 400px;
+}
+
+.profile_img {
+  text-align: center;
+}
+
 /* NOTE: Project pages */
 
 #project h1 {
   text-align: center;
+}
+
+#project img {
+  max-width: 1200px;
 }
 
 
@@ -226,7 +240,7 @@ a.button:focus {
   background-color: #2F3C7E;
   padding: 10px 20px;
   border-radius: 10px;
-  transition: 0.2s opacity;
+  transition-duration: 0.3s;
 }
 
 
@@ -245,10 +259,147 @@ a.button:focus {
   border: 2px solid #2F3C7E;
   padding: 5px 40px;
   margin-bottom: 10px;
+  transition-duration: 0.5s;
 }
 
 .button.contact:hover,
 .button.contact:active {
   background-color: #2F3C7E;
   color: #ffffff;
+}
+
+
+/* NOTE: CSS Animation */
+
+.animation svg {
+  height: auto;
+}
+
+@keyframes color-change {
+  from {fill: #ffe3ac;}
+  to {fill: #f5b970;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,0);}
+  to {transform: translate(100px,0);}
+}
+
+.cloud-b {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(0,0);}
+  to {transform: translate(-50px, 0);}
+}
+
+.cloud-a,
+.cloud-c {
+  animation: 15s cloud-move-reverse infinite alternate linear;
+}
+
+/* NOTE: Medium Screen Media Query */
+
+@media only screen and (min-width: 640px) {
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+}
+
+nav > ul {
+  margin: 0;
+}
+
+main {
+  padding-top: 60px;
+}
+
+body {
+  font-size: 18px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+
+.row::after {
+  content:"";
+  clear: both;
+  display: table;
+}
+
+#work h3 {
+  margin: 0;
+}
+
+#aboutme h3 {
+  margin-top: 0;
+}
+
+}
+
+
+/* NOTE: Large Screen Media Query */
+
+@media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  #aboutme h2 {
+    text-align: left;
+  }
+
+  #aboutme .col-lg-5 {
+    padding-left: 10px;
+  }
+
+  #aboutme .cv {
+    text-align: left;
+  }
+
+  #aboutme img {
+    max-width: 600px;
+  }
+
+  .skills {
+    padding-top: 5px;
+  }
+
+  .tools {
+    margin-top: 30px;
+  }
+
+}
+
+/* NOTE: X-Large Screen Media Query */
+
+@media only screen and (min-width: 1440px) {
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
