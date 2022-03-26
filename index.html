@@ -2,19 +2,21 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <title>Audrey Balmain - UX and UI Designer based in Fife Scotland</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Audrey Balmain - UX and UI Designer based in Fife Scotland</title>
+  <script src="https://kit.fontawesome.com/a89aed2bd5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <div class="logo">
         <a href="index.html">Audrey Balmain</a>
       </div>
@@ -22,9 +24,11 @@
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div> <!-- NOTE: end of toggle div -->
     </div> <!-- NOTE: end of container div -->
   </header>
   <main>
@@ -338,6 +342,8 @@
       <p>Copyright ABalmain 2022</p>
     </div> <!-- NOTE: end of container div -->
   </footer>
+  <!-- NOTE: link to jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- NOTE: link to JavaScript file -->
   <script src="js/scripts.js"></script>
 </body>
