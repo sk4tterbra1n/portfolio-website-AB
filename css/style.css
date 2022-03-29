@@ -283,6 +283,10 @@ a.button:focus {
   text-decoration: none;
 }
 
+.button:visited {
+  color: #ffffff;
+}
+
 .button.contact,
 .button.contact:focus {
   background-color: transparent;
