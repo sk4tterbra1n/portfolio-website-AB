@@ -239,6 +239,9 @@ footer h2 {
 }
 
 /* NOTE: Project pages */
+#project {
+  margin-bottom: 50px;
+}
 
 #project h1 {
   text-align: center;
